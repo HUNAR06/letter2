@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Love</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: url('./photo.jpg') no-repeat center center/cover;
+            color: #fff;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+            .popup {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: rgba(255, 192, 203, 0.9);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(255, 182, 193, 0.5);
+            text-align: center;
+            display: none;
+        }
+        .popup button {
+            margin-top: 10px;
+            padding: 5px 10px;
+            border: none;
+            background: #ff4d6d;
+            color: #fff;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .container {
+            max-width: 600px;
+            background: rgba(0, 0, 0, 0.6); /* Dark overlay for readability */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+        }
+        h1 {
+            color: #ffcccc;
+        }
+        p {
+            line-height: 1.6;
+        }
+        .small-text {
+            font-size: 12px;
+            color: #ddd;
+            margin-top: -10px;
+            font-style: italic;
+        }
+        .signature {
+            margin-top: 20px;
+            font-weight: bold;
+            color: #ffcccc;
+            cursor: pointer;
+        }
+        .signature:hover {
+            text-decoration: underline;
+        }
+        .love-note {
+            font-size: 14px;
+            color: #ffb6c1;
+            margin-top: 5px;
+        }
+        .card-container {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 20px;
+        }
+        .card {
+            width: 100px;
+            height: 140px;
+            background: rgba(255, 255, 255, 0.2);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+            cursor: pointer;
+            box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+            font-weight: bold;
+            color: #fff;
+            transition: transform 0.2s;
+        }
+        .card:hover {
+            transform: scale(1.1);
+        }
+        .message-container {
+            margin-top: 20px;
+            font-size: 16px;
+            color: #ffcccc;
+            font-style: italic;
+        }
+    </style>
+    <script>
+        window.onload = function() {
+            document.getElementById("popup").style.display = "block";
+        };
+        function closePopup() {
+            document.getElementById("popup").style.display = "none";
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1>My Love,</h1>
+        <p>Seeing you in college every day is the best part of my routine. No matter how hectic life gets, every glance, every moment with you makes everything better.</p>
+        <p class="small-text">You are my favorite part of every day.</p>
+        <p class="love-note">I catch myself smiling just thinking about you.</p>
+
+        <p>I wish every class, every hallway, every stolen moment could last longer. Time with you never feels like enough, but even the shortest moments make my heart race.</p>
+        <p class="small-text">Every second with you is a memory I cherish.</p>
+        <p class="love-note">You make the ordinary feel magical.</p>
+
+        <p>Some days, I just sit and wait for the moment I get to see you again. And when I do, everything feels right. No matter what happens, knowing I’ll see you makes it all worthwhile.</p>
+        <p class="small-text">You are my reason to look forward to tomorrow.</p>
+        <p class="love-note">You make every day special just by being in it.</p>
+
+        <p>Until the next time I see you, just know I’m thinking about you, missing you, and counting down the minutes until we’re together again.</p>
+        <p class="small-text">You are my favorite hello and my hardest goodbye.</p>
+        <p class="love-note">You are my person, my happiness, my always.</p>
+
+        <p class="signature">Forever yours.</p>
+          <div id="popup" class="popup">
+        <p>My love, no matter how far we are, my heart is always with you. You are my forever, my safe place, and my happiest thought. I love you endlessly.</p>
+        <button onclick="closePopup()">Close</button>
+    </div>
+</body>
+</html>
+    
+
